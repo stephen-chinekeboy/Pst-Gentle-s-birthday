@@ -91,7 +91,7 @@ header span {
   font-family: 'Playfair Display';
   margin-bottom: 25px;
   text-transform: capitalize;
-  word-spacing: 10px;
+  word-spacing: 5px;
   line-height: 40px;
 }
 .story-text strong {
@@ -149,20 +149,33 @@ header span {
 .celebrate-text h3 {
   color: gold;
   font-family: 'Playfair Display';
+  font-size: 25px;
 }
 .focused svg{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-.kind-text h3 {
+/* .kind-text h3 {
   width: 200px;
-}
-.leader-text ,
+} */
+.leader-text,
 .kind-text,
 .star-text,
 .focused-test, p{
   margin-top: 15px;
   line-height: 30px;
 }
+.you {
+  background-color: rgba(255, 217, 0, 0.189);
+  padding: 40px 8%;
+}
+.today {
+  text-align: center;
+}
+.today h2 {
+  font-size: 30px;
+  font-family: 'Playfair Display';
+}
+
 /* Smooth floating animation */
 @keyframes float {
   0% { transform: translateY(0px); }
@@ -172,9 +185,33 @@ header span {
 
 /* Mobile responsiveness */
 @media (max-width: 480px) {
+  .sec {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .svg img {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .straight-line {
+    padding: 0;
+  }
+
+  .celebrate-flex {
+    flex-direction: column;
+  }
+
+  .her-story {
+    flex-direction: column;
+  }
   
 }
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  
+}
+@media (min-width: 481px) and (max-width: 768px) {
   .sec {
     flex-direction: column;
     text-align: center;
@@ -188,4 +225,26 @@ header span {
   .her-story {
     flex-direction: column;
   }
+
+  .celebrate-flex {
+    flex-direction: column;
+  }
+
+  .straight-line {
+    padding: 0 60px;
+  }
+  /* .kind{
+   text-align: center;
+  } */
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .straight-line {
+    padding: 0 60px;
+  }
+  .celebrate-flex {
+     flex-direction: column;
+  }
+  /* .kind-text h3{
+    width: 900px;
+  } */
 }
